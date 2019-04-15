@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Embers
-=========================*/
+# *======= Changes =======*
 #Complex melter
 recipes.remove(<embers:block_furnace>);
 recipes.addShaped(<embers:block_furnace>, [
@@ -25,15 +23,19 @@ recipes.addShaped(<embers:mech_core>, [
 	[<ore:ingotIron>, <minecraft:iron_trapdoor>, <ore:ingotIron>]
 	]);
 
-/*=========================
-Removals
-=========================*/
-
-#Remove gears
+# *======= Removals =======*
+#Gears
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_gold>);
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_iron>);
+/*
+#Tinker hammer
+recipes.removeShaped(<embers:tinker_hammer>, [
+	[<minecraft:iron_ingot>, <thermalfoundation:material:131>, <minecraft:iron_ingot>],
+	[<minecraft:iron_ingot>, <minecraft:stick>, <minecraft:iron_ingot>], 
+	[null, <minecraft:stick>, null]
+	]); */
 
-#Remove Dawnstone + hammer = plate recipes
+#Hammer - plates
 recipes.remove(<embers:plate_dawnstone>);
 recipes.remove(<embers:plate_gold>);
 recipes.remove(<embers:plate_iron>);
@@ -46,8 +48,7 @@ recipes.remove(<embers:plate_tin>);
 recipes.remove(<embers:plate_aluminum>);
 recipes.remove(<embers:plate_bronze>);
 
-#Remove tools
-
+# *----- Tools -----*
 #Swords
 mods.jei.JEI.removeAndHide(<embers:sword_electrum>);
 mods.jei.JEI.removeAndHide(<embers:sword_copper>);

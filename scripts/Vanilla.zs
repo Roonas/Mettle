@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Vanilla
-=========================*/
+# *======= Changes =======*
 #Furnace
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
@@ -9,26 +7,24 @@ recipes.addShaped(<minecraft:furnace>, [
 	[<ore:cobblestone>, <ore:ingotCopper>, <ore:cobblestone>]
 	]);
 
-#Enchanter recipe
+#Enchanter
 recipes.addShaped(<minecraft:enchanting_table>, [
 	[null, <minecraft:book>, null],
 	[<betterwithmods:material:45>, <quark:quilted_wool:14>,<betterwithmods:material:45>],
 	[<minecraft:obsidian>, <betterwithmods:material:51>, <minecraft:obsidian>]
 	]);
 	
-#Brewing stand recipe
+#Brewing stand
 recipes.addShaped(<minecraft:brewing_stand>, [
 	[null, null, null],
 	[null, <minecraft:blaze_rod>, null],
 	[<betterwithmods:material:51>, <betterwithmods:material:51>, <betterwithmods:material:51>]
 	]);
 	
-#Bonemeal nerf 
+# *======= Removals =======*
+#Bonemeal
 recipes.remove(<minecraft:dye:15>);
 
-/*=========================
-Removals
-=========================*/
 #Tools
 mods.jei.JEI.removeAndHide(<minecraft:wooden_sword>);
 mods.jei.JEI.removeAndHide(<minecraft:stone_sword>);

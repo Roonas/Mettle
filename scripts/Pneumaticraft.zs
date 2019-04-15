@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Pneumaticraft
-=========================*/
+# *======= Changes =======*
 #Pressure chamber wall
 recipes.remove(<pneumaticcraft:pressure_chamber_wall>);
 recipes.addShaped(<pneumaticcraft:pressure_chamber_wall>*4, [

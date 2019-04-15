@@ -1,7 +1,4 @@
-/*=========================
-Recipe Changes - Astralsorcery
-=========================*/
-
+# *======= Changes =======*
 #Resonating wand
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand");
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/tool_basicwand", <astralsorcery:itemwand>.withTag({astralsorcery: {}}), 200, 200, [

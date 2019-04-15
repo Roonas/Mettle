@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Actually Addons
-=========================*/
+# *======= Changes =======*
 #Knife blade
 recipes.remove(<actuallyadditions:item_misc:2>);
 recipes.addShaped(<actuallyadditions:item_misc:2>, [
@@ -25,10 +23,7 @@ recipes.addShapeless(<actuallyadditions:item_misc:9>*2, [<actuallyadditions:item
 recipes.remove(<actuallyadditions:item_misc:4>);
 recipes.addShapeless(<actuallyadditions:item_misc:4>*2, [<ore:dustWheat>, <ore:dustSalt>, <minecraft:potion>.withTag({Potion: "minecraft:water"})]);
 
-	
-/*=========================
-Removals
-=========================*/
+# *======= Removals =======*
 #TR tungsten
 mods.actuallyadditions.Crusher.removeRecipe(<techreborn:dust:55>);
 

@@ -1,7 +1,8 @@
-/*=========================
-Recipe Changes - Rustic
-=========================*/
-#Rustic drying basin
+# *======= Changes =======*
+#Fertile soil
+recipes.remove(<rustic:fertile_soil>);
+
+#Drying basin
 recipes.remove(<rustic:evaporating_basin>);
 recipes.addShaped(<rustic:evaporating_basin>, [
 	[null, null, null],
@@ -9,16 +10,7 @@ recipes.addShaped(<rustic:evaporating_basin>, [
 	[null, <minecraft:netherbrick>, null]
 	]);
 
-#Fertile soil
-recipes.remove(<rustic:fertile_soil>);
-
-#Lattice 
-mods.jei.JEI.removeAndHide(<rustic:iron_lattice>);
-
-#Tallow
-mods.jei.JEI.removeAndHide(<rustic:tallow>);
-
-#Rustic hemp rope
+#Rope
 recipes.remove(<rustic:rope>);
 recipes.addShaped(<rustic:rope>, [
 	[null, <betterwithmods:material:3>, null],
@@ -89,3 +81,9 @@ recipes.addShaped(<charcoal_pit:nether_creosote_collector>, [
 <rustic:tomato_seeds>.addTooltip(format.yellow(" Summer"));
 <rustic:tomato_seeds>.addTooltip(format.red(" Autumn"));
 
+# *======= Removals =======*
+#Lattice 
+mods.jei.JEI.removeAndHide(<rustic:iron_lattice>);
+
+#Tallow
+mods.jei.JEI.removeAndHide(<rustic:tallow>);

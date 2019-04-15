@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Thermal Suite
-=========================*/
+# *======= Changes =======*
 #Opaque item duct
 recipes.remove(<thermaldynamics:duct_32:1>);	
 recipes.addShaped(<thermaldynamics:duct_32:1>*6, [
@@ -33,7 +31,7 @@ recipes.addShaped(<thermaldynamics:duct_0>, [
 	[<techreborn:plates:4>, <techreborn:plates:4>, <techreborn:plates:4>]
 	]);
 
-#Harder upgrades
+#Upgrades
 recipes.remove(<thermalfoundation:upgrade>);
 recipes.addShaped(<thermalfoundation:upgrade>, [
 	[<minecraft:redstone>, <ore:ingotInvar>, <minecraft:redstone>],
@@ -41,25 +39,25 @@ recipes.addShaped(<thermalfoundation:upgrade>, [
 	[<ore:gearBronze>, <ore:ingotInvar>, <ore:gearBronze>]
 	]);
 	
-#Harder coils
+#Coils
 recipes.remove(<thermalfoundation:material:513>);
 recipes.remove(<thermalfoundation:material:514>);
 recipes.remove(<thermalfoundation:material:515>);
 
 recipes.addShaped(<thermalfoundation:material:513>, [
 	[null, null, <actuallyadditions:item_crystal_empowered>],
-	[null, <ore:ingotGold>, null],
-	[<actuallyadditions:item_crystal_empowered>, null, null]
+	[null, <ore:ingotGold>],
+	[<actuallyadditions:item_crystal_empowered>]
 	]);
 recipes.addShaped(<thermalfoundation:material:514>, [
 	[null, null, <actuallyadditions:item_crystal_empowered>],
-	[null, <ore:ingotSilver>, null],
-	[<actuallyadditions:item_crystal_empowered>, null, null]
+	[null, <ore:ingotSilver>],
+	[<actuallyadditions:item_crystal_empowered>]
 	]);
 recipes.addShaped(<thermalfoundation:material:515>, [
 	[null, null, <actuallyadditions:item_crystal_empowered>],
-	[null, <ore:ingotElectrum>, null],
-	[<actuallyadditions:item_crystal_empowered>, null, null]
+	[null, <ore:ingotElectrum>],
+	[<actuallyadditions:item_crystal_empowered>]
 	]);
 
 #Complex device frames
@@ -78,41 +76,21 @@ recipes.addShaped(<thermalexpansion:frame:0>, [
 	[<techreborn:plates:30>, <ore:blockGlassHardened>, <techreborn:plates:30>]
 	]);
 	
-/*=========================
-Fluid Transposer 
-(output, input, liquid*mb, energy)
-=========================*/	
+# *----- Fluid Transposer -----*
 #Skystone creation
 mods.thermalexpansion.Transposer.addFillRecipe(<appliedenergistics2:sky_stone_block>, <minecraft:stone>, <liquid:aerotheum> * 250, 400);
 	
-/*=========================
-Removals
-=========================*/
-#Remove charcoal bypass
-furnace.remove(<minecraft:coal:1>, <thermalfoundation:material:801>);	
-
-/*=========================
-Pulverizer 
-(input)
-=========================*/
+# *----- Pulverizer -----*
 mods.thermalexpansion.Pulverizer.removeRecipe(<techreborn:ore:8>);
 
-/*========================= 
-Compacter 
-(input)
-=========================*/
+# *----- Compactor -----*
 mods.thermalexpansion.Compactor.removeStorageRecipe(<techreborn:ingot:22>);
 
-/*=========================
-InductionSmelter 
-(input)
-=========================*/	
+# *----- Removals -----*
+#Compressed sawdust
+furnace.remove(<minecraft:coal:1>, <thermalfoundation:material:801>);	
 
-
-/*=========================
-Gears
-=========================*/
-#Unused gears
+#Gears - disable
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:27>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:260>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:262>);
@@ -121,7 +99,7 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:264>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:288>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:295>);
 
-#Gear removal
+#Gears
 recipes.remove(<thermalfoundation:material:26>);
 recipes.remove(<thermalfoundation:material:295>);
 recipes.remove(<thermalfoundation:material:294>);

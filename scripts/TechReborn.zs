@@ -1,10 +1,8 @@
-/*=========================
-Recipe Changes - Tech Reborn
-=========================*/
+# *======= Import =======*
 import crafttweaker.item.IItemStack;
 
-
-#Complex machine frame
+# *======= Changes =======*
+#Machine frame
 recipes.remove(<techreborn:machine_frame>);
 recipes.addShaped(<techreborn:machine_frame>, [
 	[<ore:ingotAluminum>, <ore:plastic>, <ore:ingotAluminum>],
@@ -12,7 +10,7 @@ recipes.addShaped(<techreborn:machine_frame>, [
 	[<ore:ingotAluminum>, <ore:plastic>, <ore:ingotAluminum>]
 	]);
 
-#Complex iron furnace
+#Iron furnace
 recipes.remove(<techreborn:iron_furnace>);
 recipes.addShaped(<techreborn:iron_furnace>, [
 	[<techreborn:plates:34>, <techreborn:plates:34>, <techreborn:plates:34>],
@@ -20,7 +18,7 @@ recipes.addShaped(<techreborn:iron_furnace>, [
 	[<techreborn:plates:34>, <techreborn:plates:34>, <techreborn:plates:34>]
 	]);
 	
-#Harder mixed metal ingot
+#Mixed metal ingot
 recipes.remove(<techreborn:ingot:21>);
 recipes.addShaped(<techreborn:ingot:21>*4, [
 	[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
@@ -28,7 +26,7 @@ recipes.addShaped(<techreborn:ingot:21>*4, [
 	[<techreborn:ingot:19>, <techreborn:ingot:19>, <techreborn:ingot:19>]
 	]);
 	
-#Complex wires
+#Wires
 val metals = [
 	<thermalfoundation:material:128>,
 	<thermalfoundation:material:161>,
@@ -46,7 +44,6 @@ recipes.addShapeless(<techreborn:cable:3>, [<immersiveengineering:material:22>])
 /*recipes.addShaped(<techreborn:cable:4>, [
 	[ */
 
-
 var meta = 4;
 for item in metals {
 	meta += 1;
@@ -55,14 +52,6 @@ for item in metals {
 		[null, item],
 		[<techreborn:part:32>, <techreborn:part:32>, <techreborn:part:32>]
 		]);
-}
+	}
 
-/*=========================
-Removals
-=========================*/
-#Titanium
-furnace.remove(<techreborn:ingot:14>);
-
-#Tungsten
-furnace.remove(<techreborn:ingot:15>);
-
+# *======= Removals =======*

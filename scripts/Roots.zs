@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Roots
-=========================*/
+# *======= Changes =======*
 #Thatch
 furnace.addRecipe(<roots:straw>*2, <charcoal_pit:straw>);
 
@@ -19,21 +17,18 @@ recipes.addShaped(<roots:diamond_hammer>, [
 	[<betterwithmods:material:45>, <minecraft:stick>, <betterwithmods:material:45>],
 	[null, <minecraft:stick>, null]
 	]);
-
-/*=========================
-Removals
-=========================*/
+	
+# *======= Removals =======*
 #Fire starter 
 mods.jei.JEI.removeAndHide(<roots:firestarter>);
 
-#Shears
+#Wood shears
 mods.jei.JEI.removeAndHide(<roots:wood_shears>);
 
 #Knives
 mods.jei.JEI.removeAndHide(<roots:wood_knife>);
 mods.jei.JEI.removeAndHide(<roots:stone_knife>);
 mods.jei.JEI.removeAndHide(<roots:gold_knife>);
-
 
 #Hammers
 mods.jei.JEI.removeAndHide(<roots:wood_hammer>);

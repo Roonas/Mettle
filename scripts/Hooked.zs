@@ -1,6 +1,4 @@
-/*=========================
-Recipe Changes - Hooked
-=========================*/
+# *======= Changes =======*
 #Plant fiber
 recipes.remove(<hooked:microcrafting>);
 recipes.addShapeless(<hooked:microcrafting>, [<flintmod:tool_part_flint>, <charcoal_pit:straw>]);

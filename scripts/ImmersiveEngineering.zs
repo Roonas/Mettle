@@ -1,9 +1,8 @@
-/*=========================
-Recipe Changes - Immersive Engineering
-=========================*/
+# *======= Import =======*
 import crafttweaker.item.IItemStack as IItemStack;
 
-#Steel conveyor belts
+# *======= Changes =======*
+#Conveyor belts
 recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}));
 
 recipes.addShapeless(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}),
@@ -20,10 +19,8 @@ recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immers
 	[<ore:leather>, <ore:leather>, <ore:leather>],
 	[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>]
 	]);
-	
-#
 
-#Complex redstone engineering block
+#Redstone engineering block
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3>, [
 	[<ore:ingotSteel>, <techreborn:plates:4>, <ore:ingotSteel>],
@@ -31,7 +28,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:3>, [
 	[<ore:ingotSteel>, <techreborn:plates:4>, <ore:ingotSteel>]
 	]);
 
-#Workbench with steel
+#Workbench 
 recipes.remove(<immersiveengineering:wooden_device0:2>);
 recipes.addShaped(<immersiveengineering:wooden_device0:2>, [
 	[],
@@ -39,7 +36,7 @@ recipes.addShaped(<immersiveengineering:wooden_device0:2>, [
 	[<minecraft:crafting_table>, <ore:ingotSteel>, <immersiveengineering:wooden_decoration>]
 	]);
 	
-#Windmill with steel
+#Windmill 
 recipes.remove(<immersiveengineering:wooden_device1:1>);
 recipes.addShaped(<immersiveengineering:wooden_device1:1>, [
 	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
@@ -47,7 +44,7 @@ recipes.addShaped(<immersiveengineering:wooden_device1:1>, [
 	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
 	]);
 
-#'Pure' steel blast furnace
+#Blast furnace
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>],
@@ -55,7 +52,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>]
 	]);
 	
-#'Pure' coke furnace
+#Coke furnace
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.addShaped(<immersiveengineering:stone_decoration>, [
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>],
@@ -63,7 +60,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration>, [
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>]
 	]);
 
-#Complex alloy kiln
+#Alloy kiln
 recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.addShaped(<immersiveengineering:stone_decoration:10>, [
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>],
@@ -82,32 +79,15 @@ recipes.addShaped(<immersiveengineering:tool>, [
 #Redstone plate
 mods.immersiveengineering.AlloySmelter.addRecipe(<techreborn:plates:4>, <ore:ingotIron>, <minecraft:redstone>, 1600);
 
-/*=========================
-Removals
-=========================*/
+# *======= Removals =======*
 
-#Ingot + hammer = plates
+#Hammer - plates
 val plates = <immersiveengineering:metal>.definition;
 for i in 30 to 41{
     recipes.removeShapeless(plates.makeStack(i), [<*>, <immersiveengineering:tool>]);
 } 
 
-#Coal in BlastFurnace
-mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:coal:1>);
-mods.immersiveengineering.BlastFurnace.removeFuel(<thermalfoundation:storage_resource>);
-
-#Tungsten ore in Crusher
-mods.immersiveengineering.Crusher.removeRecipesForInput(<techreborn:ore:8>);
-
-#TR alloys in ArcFurnace
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:3>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:14>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:15>);
-
-#TR plates in MetalPress
-mods.immersiveengineering.MetalPress.removeRecipe(<techreborn:plates:37>);
-
-#Hand crafted rods
+#Crafted rods
 recipes.remove(<immersiveengineering:material:1>);
 recipes.remove(<immersiveengineering:material:2>);
 recipes.remove(<immersiveengineering:material:3>);
@@ -121,7 +101,21 @@ mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
 #Hemp cloth 
 mods.jei.JEI.removeAndHide(<immersiveengineering:material:5>);
 
-#Unsued hemp
+#Hemp fiber
 mods.jei.JEI.removeAndHide(<immersiveengineering:material:4>);
 <immersiveengineering:seed>.addTooltip(format.red("Immersive Engineering hemp is disabled in favour of Better With Mods', please use theirs instead!"));
 
+#BlastFurnace - coal fuels
+mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:coal:1>);
+mods.immersiveengineering.BlastFurnace.removeFuel(<thermalfoundation:storage_resource>);
+
+#Crusher - tungsten ore
+mods.immersiveengineering.Crusher.removeRecipesForInput(<techreborn:ore:8>);
+
+#ArcFurnace - TR ingots
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:3>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:14>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:15>);
+
+#MetalPress - TR plates
+mods.immersiveengineering.MetalPress.removeRecipe(<techreborn:plates:37>);

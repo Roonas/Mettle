@@ -1,6 +1,4 @@
-/*=========================
-Additions - Ore Dictionary
-=========================*/
+# *======= Import =======*
 import crafttweaker.oredict.IOreDictEntry;
 
 #TR hardened glass
@@ -26,7 +24,13 @@ for i in 0 to 16 {
 	<ore:plastic>.add(pcPlastic.makeStack(i));
 }
 	
-
-#Remove Aluminium
+# *======= Removals =======*
+#Aluminium
 furnace.remove(<ore:ingotAluminum>);
 <ore:oreAluminum>.remove(<geolosys:cluster:6>);
+
+#Titanium
+furnace.remove(<techreborn:ingot:14>);
+
+#Tungsten
+furnace.remove(<techreborn:ingot:15>);

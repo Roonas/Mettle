@@ -1,8 +1,7 @@
-/*=========================
-Recipe Changes - Better With Mods
-=========================*/
+# *======= Import =======*
 import crafttweaker.oredict.IOreDictEntry;
 
+# *======= Changes =======*
 #Colours
 val dyeDictionary as IOreDictEntry[] = [
 	<ore:dyeWhite>,
@@ -23,7 +22,7 @@ val dyeDictionary as IOreDictEntry[] = [
 	<ore:dyeBlack>
 	] as IOreDictEntry[];
 	
-#Harder beds
+#Beds
 val oakMould = <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "oak"}, Name: "minecraft:planks"}});
 
 recipes.remove(<minecraft:bed:*>);
@@ -37,7 +36,7 @@ for i in 0 to 16 {
     recipes.addShapeless(<minecraft:bed>.withDamage(i), [dyeDictionary[i], <minecraft:bed:*>]);
 }
 
-#Harder sleeping bags
+#Sleeping bags
 recipes.remove(<comforts:sleeping_bag:*>);
 
 recipes.addShaped(<comforts:sleeping_bag>, [
@@ -57,9 +56,7 @@ mods.betterwithmods.Anvil.addShapeless(<betterwithmods:material:51>, [<betterwit
 mods.betterwithmods.Anvil.removeShaped(<betterwithmods:material:42>);
 mods.betterwithmods.Anvil.addShaped(<betterwithmods:material:42>, [[<betterwithmods:material:8>, <betterwithmods:material:51>, <betterwithmods:material:41>, <betterwithmods:material:8>]]);
 
-/*=========================
-Removals
-=========================*/
+# *======= Removals =======*
 #Wooden gear
 mods.jei.JEI.hide(<betterwithmods:material>);
 
