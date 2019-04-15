@@ -1,5 +1,5 @@
 # *======= Changes =======*
-#Complex melter
+#Melter
 recipes.remove(<embers:block_furnace>);
 recipes.addShaped(<embers:block_furnace>, [
 	[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
@@ -7,8 +7,13 @@ recipes.addShaped(<embers:block_furnace>, [
 	[<ore:ingotIron>, <betterwithmods:cooking_pot>, <ore:ingotIron>]
 	]);
 
-#Soulsteel hammer
-recipes.remove(<embers:tinker_hammer>.withTag({}));
+#Tinker hammer
+#Must be shaped?
+recipes.removeShaped(<embers:tinker_hammer>, [
+	[<minecraft:iron_ingot>, <thermalfoundation:material:131>, <minecraft:iron_ingot>],
+	[<minecraft:iron_ingot>, <minecraft:stick>, <minecraft:iron_ingot>], 
+	[null, <minecraft:stick>, null]
+	]); 
 recipes.addShaped(<embers:tinker_hammer>.withTag({}), [
 	[<ore:ingotIron>, <ore:ingotLead>, <ore:ingotIron>],
 	[<ore:ingotIron>, <betterwithmods:material:36>, <ore:ingotIron>],
@@ -27,13 +32,6 @@ recipes.addShaped(<embers:mech_core>, [
 #Gears
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_gold>);
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_iron>);
-/*
-#Tinker hammer
-recipes.removeShaped(<embers:tinker_hammer>, [
-	[<minecraft:iron_ingot>, <thermalfoundation:material:131>, <minecraft:iron_ingot>],
-	[<minecraft:iron_ingot>, <minecraft:stick>, <minecraft:iron_ingot>], 
-	[null, <minecraft:stick>, null]
-	]); */
 
 #Hammer - plates
 recipes.remove(<embers:plate_dawnstone>);

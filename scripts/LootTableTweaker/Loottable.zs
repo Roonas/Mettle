@@ -1,7 +1,7 @@
-/*=========================
-Removals - Loot tables
-=========================*/
+# *======= Changes =======*
 mods.ltt.LootTable.removeGlobalItem("botania:manaResource");
+mods.ltt.LootTable.removeGlobalItem("actuallyadditions:block_misc:9");
+mods.ltt.LootTable.removeGlobalItem("<thermalfoundation:material:160>");
 mods.ltt.LootTable.removeGlobalItem("minecraft:iron_ingot");
 mods.ltt.LootTable.removeGlobalItem("minecraft:iron_pickaxe");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wooden_sword");

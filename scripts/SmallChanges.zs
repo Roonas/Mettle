@@ -11,7 +11,11 @@ mods.jei.JEI.removeAndHide(<appliedenergistics2:material:40>);
 
 # *------- Blood Magic -------*
 #Blood altar
-recipes.remove(<bloodmagic:altar>.withTag({}));
+#Must be shaped?
+recipes.removeShaped(<bloodmagic:altar>, [
+	[<minecraft:stone>, null, <minecraft:stone>],
+	[<minecraft:stone>, <minecraft:furnace>, <minecraft:stone>], 
+	[<minecraft:gold_ingot>, <bloodmagic:monster_soul>, <minecraft:gold_ingot>]]); */
 recipes.addShaped(<bloodmagic:altar>.withTag({}), [
 	[<betterwithmods:material:51>, null, <betterwithmods:material:51>],
 	[<betterwithmods:material:51>, <minecraft:cauldron>, <betterwithmods:material:51>],
@@ -21,17 +25,10 @@ recipes.addShaped(<bloodmagic:altar>.withTag({}), [
 #Tungsten dust
 mods.bloodmagic.AlchemyTable.removeRecipe([<techreborn:ore:8>, <bloodmagic:cutting_fluid>.withTag({})]);
 
-/*
-#Blood Magic
-recipes.removeShaped(<bloodmagic:altar>, [
-	[<minecraft:stone>, null, <minecraft:stone>],
-	[<minecraft:stone>, <minecraft:furnace>, <minecraft:stone>], 
-	[<minecraft:gold_ingot>, <bloodmagic:monster_soul>, <minecraft:gold_ingot>]]); */
-
 # *------- Botania -------*
 #Manasteel 
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
-mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <ore:ingotSteel>, 200);
+mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <betterwithmods:material:14>, 500);
 
 # *------- Charcoal Pit -------*
 #Bronze alloy
@@ -105,7 +102,12 @@ recipes.addShaped(<integrateddynamics:squeezer>, [
 	]);
 	
 #Battery
-recipes.remove(<integrateddynamics:energy_battery>.withTag({}));
+#Must be shaped?
+recipes.removeShaped(<integrateddynamics:energy_battery>, [
+	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:crystalized_menril_chunk>],
+	[<integrateddynamics:crystalized_menril_chunk>, <minecraft:redstone_block>, <integrateddynamics:crystalized_menril_chunk>], 
+	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:crystalized_menril_chunk>]
+	]); 
 recipes.addShaped(<integrateddynamics:energy_battery>.withTag({}), [
 	[<integrateddynamics:crystalized_menril_block>, <ore:blockRedstone>, <integrateddynamics:crystalized_menril_block>],
 	[<ore:ingotAluminum>, <techreborn:part:29>, <ore:ingotAluminum>],
@@ -119,14 +121,10 @@ recipes.addShaped(<integrateddynamics:logic_programmer>, [
 	[<ore:ingotAluminum>, <techreborn:part:29>, <ore:ingotAluminum>],	
 	[<integrateddynamics:crystalized_menril_chunk>, <ore:ingotAluminum>, <integrateddynamics:crystalized_menril_chunk>]
 	]); 
-/*	
-#Battery	
-recipes.removeShaped(<integrateddynamics:energy_battery>, [
-	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:crystalized_menril_chunk>],
-	[<integrateddynamics:crystalized_menril_chunk>, <minecraft:redstone_block>, <integrateddynamics:crystalized_menril_chunk>], 
-	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_block>, <integrateddynamics:crystalized_menril_chunk>]
-	]); */
 	
+#Salt	
+DryingBasin.addRecipe(null, <liquid:water> * 1000, <immersivetech:material>, null, 10);
+
 # *------- Open Glider -------*
 #Glider wings
 recipes.remove(<openglider:hang_glider_part>);	

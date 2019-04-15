@@ -1,7 +1,6 @@
-/*=========================
-Recipe Changes - Mekanica
-=========================*/
-*/
+# *======= Changes =======*
+
+/*
 # *======= Enrichment Chamber =======*
 mods.mekanism.enrichment.removeRecipe(<mekanism:compressedcarbon>);
 mods.mekanism.enrichment.removeRecipe(<mekanism:compressedredstone>);
