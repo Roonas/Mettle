@@ -90,7 +90,7 @@
     "disable_crops": false
   },
   "integrateddynamics:biome_meneglin": {
-    "enable_seasonal_effects": false,
+    "enable_seasonal_effects": true,
     "use_tropical_seasons": false,
     "disable_crops": false
   },
@@ -110,7 +110,7 @@
     "disable_crops": false
   },
   "minecraft:river": {
-    "enable_seasonal_effects": false,
+    "enable_seasonal_effects": true,
     "use_tropical_seasons": false,
     "disable_crops": false
   },

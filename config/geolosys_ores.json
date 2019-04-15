@@ -6,7 +6,8 @@
     "size": 64,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "cinnabar": {
@@ -16,7 +17,8 @@
     "size": 40,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "gold": {
@@ -26,7 +28,8 @@
     "size": 40,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "lapis": {
@@ -36,17 +39,19 @@
     "size": 32,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "quartz": {
-    "minY": 6,
-    "maxY": 29,
+    "minY": 40,
+    "maxY": 60,
     "chance": 6,
     "size": 40,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "kimberlite": {
@@ -56,7 +61,8 @@
     "size": 20,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "beryl": {
@@ -66,17 +72,19 @@
     "size": 16,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "hematite": {
-    "minY": 32,
+    "minY": 40,
     "maxY": 60,
     "chance": 6,
     "size": 24,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "limonite": {
@@ -86,17 +94,19 @@
     "size": 80,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "malachite": {
-    "minY": 39,
-    "maxY": 44,
+    "minY": 40,
+    "maxY": 60,
     "chance": 6,
     "size": 24,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "azurite": {
@@ -106,17 +116,19 @@
     "size": 80,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "cassiterite": {
-    "minY": 44,
-    "maxY": 68,
+    "minY": 40,
+    "maxY": 60,
     "chance": 6,
     "size": 24,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "teallite": {
@@ -126,7 +138,8 @@
     "size": 80,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "galena": {
@@ -136,7 +149,8 @@
     "size": 72,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "bauxite": {
@@ -146,7 +160,8 @@
     "size": 64,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "platinum": {
@@ -156,7 +171,8 @@
     "size": 32,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "autunite": {
@@ -166,7 +182,8 @@
     "size": 24,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   },
   "sphalerite": {
@@ -176,7 +193,8 @@
     "size": 24,
     "blacklist": [
       -1,
-      1
+      1,
+	  -6
     ]
   }
 }

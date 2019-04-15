@@ -23,7 +23,8 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					0
 				]
 			}
 		},
@@ -49,12 +50,13 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					0
 				]
 			}
 		},
 		"silver": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
@@ -85,12 +87,13 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					0
 				]
 			}
 		},
 		"lead": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [
@@ -121,7 +124,8 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					0
 				]
 			}
 		},
@@ -147,7 +151,8 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
+					1,
+					0
 				]
 			}
 		},
@@ -183,67 +188,8 @@
 				"restriction": "blacklist",
 				"value": [
 					-1,
-					1
-				]
-			}
-		},
-		"copper_ocean": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thermalfoundation:ore",
-					"properties": {
-						"type": "copper"
-					}
-				},
-				"material": "minecraft:stone",
-				"cluster-size": 8
-			},
-			"cluster-count": 4,
-			"min-height": 20,
-			"max-height": 55,
-			"retrogen": "true",
-			"biome": {
-				"restriction": "whitelist",
-				"value": [
-					{
-						"type": "dictionary",
-						"entry": "OCEAN"
-					}
-				]
-			},
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
-		},
-		"copper_high": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thermalfoundation:ore",
-					"properties": {
-						"type": "copper"
-					}
-				},
-				"material": "minecraft:stone",
-				"cluster-size": 8
-			},
-			"cluster-count": 8,
-			"min-height": 48,
-			"max-height": 96,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
+					1,
+					0
 				]
 			}
 		}
