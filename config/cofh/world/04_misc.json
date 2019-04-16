@@ -310,7 +310,7 @@
 					"metadata": 10
 				},
 				"material": "minecraft:end_stone",
-				"cluster-size": 12
+				"cluster-size": 8
 			},
 			"cluster-count": 24,
 			"chunk-chance": 5,
@@ -364,7 +364,7 @@
 					"metadata": 0
 				},
 				"material": "minecraft:end_stone",
-				"cluster-size": 14
+				"cluster-size": 12
 			},
 			"cluster-count": 24,
 			"chunk-chance": 5,

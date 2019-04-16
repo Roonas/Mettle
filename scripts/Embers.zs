@@ -4,7 +4,7 @@ recipes.remove(<embers:block_furnace>);
 recipes.addShaped(<embers:block_furnace>, [
 	[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
 	[<embers:brick_caminite>, <betterwithmods:material:17>, <embers:brick_caminite>],
-	[<ore:ingotIron>, <betterwithmods:cooking_pot>, <ore:ingotIron>]
+	[<ore:ingotIron>, <minecraft:cauldron>, <ore:ingotIron>]
 	]);
 
 #Tinker hammer
@@ -28,6 +28,16 @@ recipes.addShaped(<embers:mech_core>, [
 	[<ore:ingotIron>, <minecraft:iron_trapdoor>, <ore:ingotIron>]
 	]);
 
+#Superheater
+recipes.remove(<embers:superheater>);
+recipes.addShaped(<embers:superheater>, [
+	[null, <embers:ingot_dawnstone>, <embers:plate_dawnstone>],
+	[<ore:ingotCopper>, <embers:ember_cluster>, <embers:ingot_dawnstone>],
+	[<ore:ingotCopper>, <ore:ingotCopper>]
+	]);
+	
+	
+	
 # *======= Removals =======*
 #Gears
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_gold>);

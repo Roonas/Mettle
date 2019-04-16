@@ -1,3 +1,6 @@
+# *======= Import =======*
+import crafttweaker.item.IIngredient;
+
 # *======= Changes =======*
 #Knife blade
 recipes.remove(<actuallyadditions:item_misc:2>);
@@ -17,11 +20,12 @@ recipes.addShaped(<actuallyadditions:block_misc:9>, [
 	]);
 	
 #Dough
+val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 recipes.remove(<actuallyadditions:item_misc:9>);
-recipes.addShapeless(<actuallyadditions:item_misc:9>*2, [<actuallyadditions:item_food:16>, <ore:dustSalt>, <minecraft:potion>.withTag({Potion: "minecraft:water"})]);
+recipes.addShapeless(<actuallyadditions:item_misc:9>*2, [<actuallyadditions:item_food:16>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
 
 recipes.remove(<actuallyadditions:item_misc:4>);
-recipes.addShapeless(<actuallyadditions:item_misc:4>*2, [<ore:dustWheat>, <ore:dustSalt>, <minecraft:potion>.withTag({Potion: "minecraft:water"})]);
+recipes.addShapeless(<actuallyadditions:item_misc:4>*2, [<ore:dustWheat>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
 
 # *======= Removals =======*
 #TR tungsten

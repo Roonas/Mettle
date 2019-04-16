@@ -25,6 +25,13 @@ recipes.addShaped(<minecraft:brewing_stand>, [
 #Bonemeal
 recipes.remove(<minecraft:dye:15>);
 
+#Boat
+recipes.removeShaped(<minecraft:boat>, [
+[],
+[<ore:plankWood>, null, <ore:plankWood>],
+[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+]);
+
 #Tools
 mods.jei.JEI.removeAndHide(<minecraft:wooden_sword>);
 mods.jei.JEI.removeAndHide(<minecraft:stone_sword>);

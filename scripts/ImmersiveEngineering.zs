@@ -77,7 +77,7 @@ recipes.addShaped(<immersiveengineering:tool>, [
 	]);
 
 #Redstone plate
-mods.immersiveengineering.AlloySmelter.addRecipe(<techreborn:plates:4>, <ore:ingotIron>, <minecraft:redstone>, 1600);
+recipes.addShapeless(<techreborn:plates:4>, [<immersiveengineering:tool>.transformDamage(15).giveBack(), <ore:blockRedstone>]);
 
 # *======= Removals =======*
 

@@ -15,7 +15,7 @@ mods.jei.JEI.removeAndHide(<appliedenergistics2:material:40>);
 recipes.removeShaped(<bloodmagic:altar>, [
 	[<minecraft:stone>, null, <minecraft:stone>],
 	[<minecraft:stone>, <minecraft:furnace>, <minecraft:stone>], 
-	[<minecraft:gold_ingot>, <bloodmagic:monster_soul>, <minecraft:gold_ingot>]]); */
+	[<minecraft:gold_ingot>, <bloodmagic:monster_soul>, <minecraft:gold_ingot>]]); 
 recipes.addShaped(<bloodmagic:altar>.withTag({}), [
 	[<betterwithmods:material:51>, null, <betterwithmods:material:51>],
 	[<betterwithmods:material:51>, <minecraft:cauldron>, <betterwithmods:material:51>],
@@ -33,6 +33,9 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <betterwithmods:ma
 # *------- Charcoal Pit -------*
 #Bronze alloy
 mods.charcoalpit.addAlloyRecipe(<thermalfoundation:material:163>, 2, false, true, [<ore:oreCopper>, <ore:oreTin>]);
+
+#Fertilizer
+recipes.removeShapless(<charcoal_pit:item_fertilizer>, [<ore:dirt>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]);
 	
 # *------- Charset -------*
 #Wire
@@ -71,6 +74,10 @@ recipes.addShaped(<enderstorage:ender_pouch>, [
 # *------- Wood2Flint -------*
 #Flint hoe
 mods.jei.JEI.removeAndHide(<flintmod:hoe_flint>);
+
+#Sharpened flint
+recipes.remove(<flintmod:tool_part_flint>);
+recipes.addShapeless(<flintmod:tool_part_flint>, [<minecraft:flint>.giveBack(), <minecraft:flint>]);
 	
 # *------- Garden Stuff -------*
 #Candle
@@ -123,7 +130,7 @@ recipes.addShaped(<integrateddynamics:logic_programmer>, [
 	]); 
 	
 #Salt	
-DryingBasin.addRecipe(null, <liquid:water> * 1000, <immersivetech:material>, null, 10);
+DryingBasin.addRecipe(null, <liquid:water>*1000, <mekanism:salt>, null, 10);
 
 # *------- Open Glider -------*
 #Glider wings

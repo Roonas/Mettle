@@ -5509,7 +5509,6 @@ appliedenergistics2:facade:0, Cable Facade - Carved Oak Wood
 appliedenergistics2:facade:0, Cable Facade - Soul Sandstone
 appliedenergistics2:facade:0, Cable Facade - Netherwrought Stone
 appliedenergistics2:facade:0, Cable Facade - White Quilted Wool
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
 appliedenergistics2:facade:0, Cable Facade - White Cave Crystal
 appliedenergistics2:facade:0, Cable Facade - Brimstone
 appliedenergistics2:facade:0, Cable Facade - Glowcelium
@@ -5521,6 +5520,7 @@ appliedenergistics2:facade:0, Cable Facade - Basalt
 appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
 appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
 appliedenergistics2:facade:0, Cable Facade - Blank Rune
 appliedenergistics2:facade:0, Cable Facade - Speed Rune
 appliedenergistics2:facade:0, Cable Facade - Efficiency Rune
@@ -11375,10 +11375,10 @@ traverse:blue_rock_cobblestone_slab:0, Crag Rock Cobblestone Slab
 traverse:blue_rock_cobblestone_wall, Crag Rock Cobblestone Wall
 traverse:dead_grass, Dead Grass
 traverse:cold_grass, Cold Grass
+betterwithmods:breeding_harness, Breeding Harness
 betterwithmods:long_friend, Long Friend
 betterwithmods:detector_rail_steel, Soulforged Steel Detector Rail
 betterwithmods:detector_rail_stone, Stone Detector Rail
-betterwithmods:breeding_harness, Breeding Harness
 betterwithmods:anchor, Anchor
 betterwithmods:rope, Hemp Rope
 betterwithmods:single_machine:0, Mill Stone
@@ -11707,17 +11707,18 @@ betterwithmods:wool_boots, Wool Socks
 betterwithmods:wool_chest, Wool Shirt
 betterwithmods:wool_helmet, Wool Cap
 betterwithmods:wool_pants, Wool Pants
+betterwithmods:siding_rock, %s Siding
 betterwithmods:siding_wood, %s Siding
 betterwithmods:siding_iron, %s Siding
-betterwithmods:siding_rock, %s Siding
+betterwithmods:moulding_rock, %s Moulding
 betterwithmods:moulding_wood, %s Moulding
 betterwithmods:moulding_iron, %s Moulding
-betterwithmods:moulding_rock, %s Moulding
+betterwithmods:corner_rock, %s Corner
 betterwithmods:corner_wood, %s Corner
 betterwithmods:corner_iron, %s Corner
-betterwithmods:corner_rock, %s Corner
 akashictome:tome, item.tome.name
 morphtool:tool, item.tool.name
+quark:witch_hat, item.witch_hat.name
 quark:sandstone_new:0, Polished Sandstone
 quark:sandstone_new:1, Sandstone Bricks
 quark:sandstone_new:2, Polished Red Sandstone
@@ -12002,12 +12003,6 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:iron_rod, tile.iron_rod.name
-quark:rain_detector, tile.rain_detector.name
 quark:crystal:0, White Cave Crystal
 quark:crystal:1, Red Cave Crystal
 quark:crystal:2, Orange Cave Crystal
@@ -12047,7 +12042,6 @@ quark:stone_basalt_slab:0, Basalt Slab
 quark:stone_basalt_stairs, tile.stone_basalt_stairs.name
 quark:basalt_wall, tile.basalt_wall.name
 quark:smoker, tile.smoker.name
-quark:witch_hat, item.witch_hat.name
 quark:spruce_trapdoor, tile.spruce_trapdoor.name
 quark:birch_trapdoor, tile.birch_trapdoor.name
 quark:jungle_trapdoor, tile.jungle_trapdoor.name
@@ -12124,6 +12118,12 @@ quark:jungle_button, tile.jungle_button.name
 quark:acacia_button, tile.acacia_button.name
 quark:dark_oak_button, tile.dark_oak_button.name
 quark:glass_item_frame, item.glass_item_frame.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:iron_rod, tile.iron_rod.name
+quark:rain_detector, tile.rain_detector.name
 quark:glowstone_dust_block, tile.glowstone_dust_block.name
 quark:gunpowder_block, tile.gunpowder_block.name
 quark:arrow_ender, item.arrow_ender.name
@@ -13384,15 +13384,6 @@ ftbquests:rare_lootcrate, Old Loot Crate
 ftbquests:epic_lootcrate, Old Loot Crate
 ftbquests:legendary_lootcrate, Old Loot Crate
 ftbquests:missing, Missing Item
-gardenstuff:material:0, Iron Nugget
-gardenstuff:material:1, Iron Link
-gardenstuff:material:2, Gold Link
-gardenstuff:material:3, Wrought Iron Nugget
-gardenstuff:material:4, Wrought Iron Ingot
-gardenstuff:material:5, Wrought Iron Link
-gardenstuff:material:6, Candelilla
-gardenstuff:material:7, Wax
-gardenstuff:candelilla_seeds, Candelilla Seeds
 gardenstuff:stone_block:0, Block of Charcoal
 gardenstuff:metal_block:0, Block of Wrought Iron
 gardenstuff:bloomery_furnace, Bloomery Furnace
@@ -13409,6 +13400,15 @@ gardenstuff:candelabra:0, Candle
 gardenstuff:candelabra:1, Candelabra
 gardenstuff:candelabra:2, Candelabra
 gardenstuff:candelabra:3, Candelabra
+gardenstuff:material:0, Iron Nugget
+gardenstuff:material:1, Iron Link
+gardenstuff:material:2, Gold Link
+gardenstuff:material:3, Wrought Iron Nugget
+gardenstuff:material:4, Wrought Iron Ingot
+gardenstuff:material:5, Wrought Iron Link
+gardenstuff:material:6, Candelilla
+gardenstuff:material:7, Wax
+gardenstuff:candelilla_seeds, Candelilla Seeds
 gravestone:gravestone, Gravestone
 gravestone:death_info, Death Info
 hooked:hook:0, Wooden Hook
@@ -13532,6 +13532,24 @@ ironbackpacks:upgrade:0, Damage Bar Upgrade
 ironbackpacks:upgrade:0, Latch Upgrade
 ironbackpacks:upgrade:0, Extra Upgrade Point
 ironbackpacks:upgrade:0, Everlasting Upgrade
+ironchest:iron_gold_chest_upgrade, Iron to Gold Chest Upgrade
+ironchest:gold_diamond_chest_upgrade, Gold to Diamond Chest Upgrade
+ironchest:copper_silver_chest_upgrade, Copper to Silver Chest Upgrade
+ironchest:silver_gold_chest_upgrade, Silver to Gold Chest Upgrade
+ironchest:copper_iron_chest_upgrade, Copper to Iron Chest Upgrade
+ironchest:diamond_crystal_chest_upgrade, Diamond to Crystal Chest Upgrade
+ironchest:wood_iron_chest_upgrade, Wood to Iron Chest Upgrade
+ironchest:wood_copper_chest_upgrade, Wood to Copper Chest Upgrade
+ironchest:diamond_obsidian_chest_upgrade, Diamond to Obsidian Chest Upgrade
+ironchest:iron_gold_shulker_upgrade, Iron to Gold Shulker Box Upgrade
+ironchest:gold_diamond_shulker_upgrade, Gold to Diamond Shulker Box Upgrade
+ironchest:copper_silver_shulker_upgrade, Copper to Silver Shulker Box Upgrade
+ironchest:silver_gold_shulker_upgrade, Silver to Gold Shulker Box Upgrade
+ironchest:copper_iron_shulker_upgrade, Copper to Iron Shulker Box Upgrade
+ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrade
+ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
+ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
+ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
 ironchest:iron_chest:0, Iron Chest
 ironchest:iron_chest:1, Gold Chest
 ironchest:iron_chest:2, Diamond Chest
@@ -13652,24 +13670,6 @@ ironchest:iron_shulker_box_black:3, Black Copper Shulker Box
 ironchest:iron_shulker_box_black:4, Black Silver Shulker Box
 ironchest:iron_shulker_box_black:5, Black Crystal Shulker Box
 ironchest:iron_shulker_box_black:6, Black Obsidian Shulker Box
-ironchest:iron_gold_chest_upgrade, Iron to Gold Chest Upgrade
-ironchest:gold_diamond_chest_upgrade, Gold to Diamond Chest Upgrade
-ironchest:copper_silver_chest_upgrade, Copper to Silver Chest Upgrade
-ironchest:silver_gold_chest_upgrade, Silver to Gold Chest Upgrade
-ironchest:copper_iron_chest_upgrade, Copper to Iron Chest Upgrade
-ironchest:diamond_crystal_chest_upgrade, Diamond to Crystal Chest Upgrade
-ironchest:wood_iron_chest_upgrade, Wood to Iron Chest Upgrade
-ironchest:wood_copper_chest_upgrade, Wood to Copper Chest Upgrade
-ironchest:diamond_obsidian_chest_upgrade, Diamond to Obsidian Chest Upgrade
-ironchest:iron_gold_shulker_upgrade, Iron to Gold Shulker Box Upgrade
-ironchest:gold_diamond_shulker_upgrade, Gold to Diamond Shulker Box Upgrade
-ironchest:copper_silver_shulker_upgrade, Copper to Silver Shulker Box Upgrade
-ironchest:silver_gold_shulker_upgrade, Silver to Gold Shulker Box Upgrade
-ironchest:copper_iron_shulker_upgrade, Copper to Iron Shulker Box Upgrade
-ironchest:diamond_crystal_shulker_upgrade, Diamond to Crystal Shulker Box Upgrade
-ironchest:vanilla_iron_shulker_upgrade, Vanilla to Iron Shulker Box Upgrade
-ironchest:vanilla_copper_shulker_upgrade, Vanilla to Copper Shulker Box Upgrade
-ironchest:diamond_obsidian_shulker_upgrade, Diamond to Obsidian Shulker Box Upgrade
 itemfilters:filter, Item Filter
 itemfilters:missing, Missing Item
 jarm:oak_raft, Oak Log Raft
@@ -13706,22 +13706,6 @@ openglider:hang_glider_part:1, Glider Wing (Right)
 openglider:hang_glider_part:2, Scaffolding
 openglider:hang_glider_basic, Hang Glider
 openglider:hang_glider_advanced, Advanced Hang Glider
-pneumaticcraft:logistic_frame_active_provider, Logistic Active Provider Frame
-pneumaticcraft:logistic_frame_passive_provider, Logistic Passive Provider Frame
-pneumaticcraft:logistic_frame_storage, Logistic Storage Frame
-pneumaticcraft:logistic_frame_default_storage, Logistic Default Storage Frame
-pneumaticcraft:logistic_frame_requester, Logistic Requester Frame
-pneumaticcraft:heat_frame, Heat Frame
-pneumaticcraft:spawner_agitator, Spawner Agitator
-pneumaticcraft:crop_support, Crop Support
-pneumaticcraft:transfer_gadget, Transfer Gadget
-pneumaticcraft:safety_tube_module, Safety Tube Module
-pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
-pneumaticcraft:flow_detector_module, Flow Detector Tube Module
-pneumaticcraft:air_grate_module, Air Grate Tube Module
-pneumaticcraft:regulator_tube_module, Regulator Tube Module
-pneumaticcraft:charging_module, Charging Module
-pneumaticcraft:logistics_module, Logistics Module
 pneumaticcraft:gps_tool, GPS Tool
 pneumaticcraft:gps_area_tool, GPS Area Tool
 pneumaticcraft:ingot_iron_compressed, Compressed Iron Ingot
@@ -13860,19 +13844,27 @@ pneumaticcraft:kerosene_lamp, Kerosene Lamp
 pneumaticcraft:sentry_turret, Sentry Turret
 pneumaticcraft:flux_compressor, Flux Compressor
 pneumaticcraft:pneumatic_dynamo, Pneumatic Dynamo
-pneumaticcraft:fluid.fuel, tile.fuel.name
-pneumaticcraft:fluid.kerosene, Kerosene
-pneumaticcraft:fluid.plastic, Plastic
+pneumaticcraft:logistic_frame_active_provider, Logistic Active Provider Frame
+pneumaticcraft:logistic_frame_passive_provider, Logistic Passive Provider Frame
+pneumaticcraft:logistic_frame_storage, Logistic Storage Frame
+pneumaticcraft:logistic_frame_default_storage, Logistic Default Storage Frame
+pneumaticcraft:logistic_frame_requester, Logistic Requester Frame
+pneumaticcraft:heat_frame, Heat Frame
+pneumaticcraft:spawner_agitator, Spawner Agitator
+pneumaticcraft:crop_support, Crop Support
+pneumaticcraft:transfer_gadget, Transfer Gadget
+pneumaticcraft:safety_tube_module, Safety Tube Module
+pneumaticcraft:pressure_gauge_module, Pressure Gauge Tube Module
+pneumaticcraft:flow_detector_module, Flow Detector Tube Module
+pneumaticcraft:air_grate_module, Air Grate Tube Module
+pneumaticcraft:regulator_tube_module, Regulator Tube Module
+pneumaticcraft:charging_module, Charging Module
+pneumaticcraft:logistics_module, Logistics Module
 pneumaticcraft:fluid.lpg, LPG
+pneumaticcraft:fluid.plastic, Plastic
+pneumaticcraft:fluid.kerosene, Kerosene
 pneumaticcraft:fluid.etchacid, Etching Acid
-simplecorn:corncob, Ear Of Corn
-simplecorn:kernels, Corn Kernels
-simplecorn:roastedcorn, Roasted Corn
-simplecorn:poppedcorn, Popcorn
-simplecorn:cornchowder, Corn Chowder
-simplecorn:chickencornchowder, Chicken Corn Chowder
-simplecorn:popfirework, Firework Rocket
-simplecorn:corn, Corn
+pneumaticcraft:fluid.fuel, tile.fuel.name
 storagedrawers:upgrade_template, Upgrade Template
 storagedrawers:upgrade_storage:0, Storage Upgrade (I)
 storagedrawers:upgrade_storage:1, Storage Upgrade (II)
@@ -13953,12 +13945,12 @@ storagedrawersextra:extra_trim_0, tile.extraTrim0.name
 storagedrawersextra:extra_trim_1, tile.extraTrim1.name
 storagedrawersextra:extra_trim_2, tile.extraTrim2.name
 storagedrawersextra:extra_trim_3, tile.extraTrim3.name
-torchmaster:frozen_pearl, Frozen Pearl
 torchmaster:mega_torch:0, Mega Torch
 torchmaster:mega_torch:1, Unlit Mega Torch
 torchmaster:terrain_lighter, Terrain Lighter
 torchmaster:dread_lamp, Dread Lamp
 torchmaster:feral_flare_lantern, Feral Flare Lantern
+torchmaster:frozen_pearl, Frozen Pearl
 waystones:waystone, Waystone
 waystones:return_scroll, Return Scroll
 waystones:bound_scroll, Bound Scroll
@@ -14702,7 +14694,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Diamond Ore
 chiselsandbits:block_bit:0, Chiseled Bit - Block of Diamond
 chiselsandbits:block_bit:0, Chiseled Bit - Crafting Table
 chiselsandbits:block_bit:0, Chiseled Bit - Redstone Ore
-chiselsandbits:block_bit:0, Chiseled Bit - Ice
 chiselsandbits:block_bit:0, Chiseled Bit - Snow
 chiselsandbits:block_bit:0, Chiseled Bit - Clay
 chiselsandbits:block_bit:0, Chiseled Bit - Netherrack
@@ -17441,7 +17432,6 @@ chiselsandbits:block_bit:0, Chiseled Bit - Brown Quilted Wool
 chiselsandbits:block_bit:0, Chiseled Bit - Green Quilted Wool
 chiselsandbits:block_bit:0, Chiseled Bit - Red Quilted Wool
 chiselsandbits:block_bit:0, Chiseled Bit - Black Quilted Wool
-chiselsandbits:block_bit:0, Chiseled Bit - Sugar Block
 chiselsandbits:block_bit:0, Chiseled Bit - Brimstone
 chiselsandbits:block_bit:0, Chiseled Bit - Permafrost
 chiselsandbits:block_bit:0, Chiseled Bit - Ender Biotite Ore
@@ -17457,6 +17447,7 @@ chiselsandbits:block_bit:0, Chiseled Bit - Spruce Bookshelf
 chiselsandbits:block_bit:0, Chiseled Bit - Spruce Bookshelf
 chiselsandbits:block_bit:0, Chiseled Bit - Lit Redstone Lamp
 chiselsandbits:block_bit:0, Chiseled Bit - Blaze Lantern
+chiselsandbits:block_bit:0, Chiseled Bit - Sugar Block
 chiselsandbits:block_bit:0, Chiseled Bit - Blank Rune
 chiselsandbits:block_bit:0, Chiseled Bit - Speed Rune
 chiselsandbits:block_bit:0, Chiseled Bit - Efficiency Rune

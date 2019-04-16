@@ -1,7 +1,8 @@
 # *======= Changes =======*
 #Plant fiber
+val sharpFlint = <flintmod:tool_part_flint>;
 recipes.remove(<hooked:microcrafting>);
-recipes.addShapeless(<hooked:microcrafting>, [<flintmod:tool_part_flint>, <charcoal_pit:straw>]);
+recipes.addShapeless(<hooked:microcrafting>, [sharpFlint.giveBack(), <charcoal_pit:straw>]);
 
 #Rope
 recipes.remove(<hooked:microcrafting:1>);
