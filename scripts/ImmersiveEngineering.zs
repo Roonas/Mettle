@@ -48,7 +48,7 @@ recipes.addShaped(<immersiveengineering:wooden_device1:1>, [
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>],
-	[<betterwithmods:material:51>, <betterwithmods:material:38>, <betterwithmods:material:51>],
+	[<embers:plate_caminite>, <embers:shard_ember>, <embers:plate_caminite>],
 	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>]
 	]);
 	
@@ -56,7 +56,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.addShaped(<immersiveengineering:stone_decoration>, [
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>],
-	[<betterwithmods:material:51>, <betterwithmods:material:38>, <betterwithmods:material:51>],
+	[<embers:plate_caminite>, <embers:shard_ember>, <embers:plate_caminite>],
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>]
 	]);
 
@@ -71,16 +71,27 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>, [
 #Treated hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
-	[null, <ore:ingotIron>, <betterwithmods:material:3>],
-	[null, <immersiveengineering:material>, <ore:ingotIron>],
+	[null, <gardenstuff:material:4>, <betterwithmods:material:3>],
+	[null, <immersiveengineering:material>, <gardenstuff:material:4>],
 	[<immersiveengineering:material>]
 	]);
+	
+#Wire cutters
+recipes.remove(<immersiveengineering:tool:1>);
+recipes.addShaped(<immersiveengineering:tool:1>, [
+	[<immersiveengineering:material>, <gardenstuff:material:4>],
+	[null, <immersiveengineering:material>],
+	[]
+	]);
 
-#Redstone plate
-recipes.addShapeless(<techreborn:plates:4>, [<immersiveengineering:tool>.transformDamage(15).giveBack(), <ore:blockRedstone>]);
+#BlastFurnace - fuel addition
+mods.immersiveengineering.BlastFurnace.addFuel(<geolosys:coal:3>, 1200);
+
+#BlastFurnace - steel
+mods.immersiveengineering.BlastFurnace.removeRecipe(<thermalfoundation:material:160>);
+mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:material:160>, <mekanism:enrichediron>, 1200, <immersiveengineering:material:7>);
 
 # *======= Removals =======*
-
 #Hammer - plates
 val plates = <immersiveengineering:metal>.definition;
 for i in 30 to 41{

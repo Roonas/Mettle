@@ -1,10 +1,37 @@
 # *======= Changes =======*
+#Caminite brick
+mods.charcoalpit.addKilnRecipe(<embers:blend_caminite>, <embers:brick_caminite>);
+
 #Melter
 recipes.remove(<embers:block_furnace>);
 recipes.addShaped(<embers:block_furnace>, [
 	[<embers:brick_caminite>, <embers:plate_caminite>, <embers:brick_caminite>],
 	[<embers:brick_caminite>, <betterwithmods:material:17>, <embers:brick_caminite>],
-	[<ore:ingotIron>, <minecraft:cauldron>, <ore:ingotIron>]
+	[<ore:ingotIron>, <betterwithmods:cooking_pot>, <ore:ingotIron>]
+	]);
+	
+#Activator
+recipes.remove(<embers:ember_activator>);
+recipes.addShaped(<embers:ember_activator>, [
+	[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+	[<ore:ingotCopper>, <betterwithmods:material:17>, <ore:ingotCopper>],
+	[<embers:brick_caminite>, <minecraft:furnace>, <embers:brick_caminite>]
+	]);
+
+#Item pipe
+recipes.remove(<embers:item_pipe>);
+recipes.addShaped(<embers:item_pipe>*8, [
+	[], 
+	[<ore:ingotLead>, <embers:brick_caminite>, <ore:ingotLead>],
+	[]
+	]);
+
+#Fluid pipe
+recipes.remove(<embers:pipe>);
+recipes.addShaped(<embers:pipe>*8, [
+	[], 
+	[<ore:ingotIron>, <embers:brick_caminite>, <ore:ingotIron>],
+	[]
 	]);
 
 #Tinker hammer
@@ -15,17 +42,17 @@ recipes.removeShaped(<embers:tinker_hammer>, [
 	[null, <minecraft:stick>, null]
 	]); 
 recipes.addShaped(<embers:tinker_hammer>.withTag({}), [
-	[<ore:ingotIron>, <ore:ingotLead>, <ore:ingotIron>],
-	[<ore:ingotIron>, <betterwithmods:material:36>, <ore:ingotIron>],
-	[null, <betterwithmods:material:36>, null]
+	[<gardenstuff:material:4>, <gardenstuff:material:4>, <gardenstuff:material:4>],
+	[<gardenstuff:material:4>, <immersiveengineering:material>, <gardenstuff:material:4>],
+	[null, <immersiveengineering:material>, null]
 	]);	
 
 #Mechanical core
 recipes.remove(<embers:mech_core>);
 recipes.addShaped(<embers:mech_core>, [
-	[<ore:ingotIron>, <minecraft:iron_trapdoor>, <ore:ingotIron>],
-	[<minecraft:iron_trapdoor>, <embers:ember_detector>, <minecraft:iron_trapdoor>],
-	[<ore:ingotIron>, <minecraft:iron_trapdoor>, <ore:ingotIron>]
+	[<ore:ingotIron>, <minecraft:hopper>, <ore:ingotIron>],
+	[<embers:item_pipe>, <minecraft:chest>, <embers:item_pipe>],
+	[<ore:ingotIron>, <embers:item_pipe>, <ore:ingotIron>]
 	]);
 
 #Superheater
@@ -35,9 +62,7 @@ recipes.addShaped(<embers:superheater>, [
 	[<ore:ingotCopper>, <embers:ember_cluster>, <embers:ingot_dawnstone>],
 	[<ore:ingotCopper>, <ore:ingotCopper>]
 	]);
-	
-	
-	
+
 # *======= Removals =======*
 #Gears
 mods.jei.JEI.removeAndHide(<mysticalmechanics:gear_gold>);

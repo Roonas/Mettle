@@ -16,6 +16,9 @@ import crafttweaker.oredict.IOreDictEntry;
 #Candle
 <ore:blockCandle>.add(<gardenstuff:candelabra>);
 
+#Glue
+<ore:glue>.add(<embers:adhesive>);
+
 #Plastic
 val pcPlastic = <pneumaticcraft:plastic>.definition;
 

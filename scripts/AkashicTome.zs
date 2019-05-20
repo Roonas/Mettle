@@ -170,7 +170,7 @@ print(" ==================================================== ");
 	mods.jei.JEI.addItem(completeTome);
 
 	//1 dirt = book
-	recipes.addShapeless(completeTome, [<minecraft:dirt>]);
+	recipes.addShapeless(completeTome, [<minecraft:book>]);
 	
 	// Starting item
 	mods.initialinventory.InvHandler.addStartingItem(completeTome);

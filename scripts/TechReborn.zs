@@ -25,6 +25,15 @@ recipes.addShaped(<techreborn:ingot:21>*4, [
 	[<ore:ingotBrass>, <ore:ingotBrass>, <ore:ingotBrass>],
 	[<techreborn:ingot:19>, <techreborn:ingot:19>, <techreborn:ingot:19>]
 	]);
+
+#Redstone plate
+recipes.addShapeless(<techreborn:plates:4>, [<immersiveengineering:tool>.reuse(), <ore:blockRedstone>]);
+	
+#Manganese processing
+mods.betterwithmods.Mill.addRecipe([<minecraft:redstone>], [<techreborn:smalldust:31>*2]);
+
+#Pyrite processing
+mods.betterwithmods.Mill.addRecipe([<techreborn:dust:39>], [<techreborn:smalldust:52>*2, <techreborn:smalldust:27>*2]);
 	
 #Wires
 val metals = [

@@ -19,23 +19,18 @@ recipes.removeShaped(<bloodmagic:altar>, [
 recipes.addShaped(<bloodmagic:altar>.withTag({}), [
 	[<betterwithmods:material:51>, null, <betterwithmods:material:51>],
 	[<betterwithmods:material:51>, <minecraft:cauldron>, <betterwithmods:material:51>],
-	[<ore:ingotSteel>, <bloodmagic:monster_soul>, <ore:ingotSteel>]
+	[<betterwithmods:material:14>, <bloodmagic:monster_soul>, <betterwithmods:material:14>]
 	]);
 
 #Tungsten dust
 mods.bloodmagic.AlchemyTable.removeRecipe([<techreborn:ore:8>, <bloodmagic:cutting_fluid>.withTag({})]);
-
-# *------- Botania -------*
-#Manasteel 
-mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
-mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <betterwithmods:material:14>, 500);
 
 # *------- Charcoal Pit -------*
 #Bronze alloy
 mods.charcoalpit.addAlloyRecipe(<thermalfoundation:material:163>, 2, false, true, [<ore:oreCopper>, <ore:oreTin>]);
 
 #Fertilizer
-recipes.removeShapless(<charcoal_pit:item_fertilizer>, [<ore:dirt>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]);
+recipes.removeShapeless(<charcoal_pit:item_fertilizer>, [<ore:dirt>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]); 
 	
 # *------- Charset -------*
 #Wire
@@ -136,15 +131,15 @@ DryingBasin.addRecipe(null, <liquid:water>*1000, <mekanism:salt>, null, 10);
 #Glider wings
 recipes.remove(<openglider:hang_glider_part>);	
 recipes.addShaped(<openglider:hang_glider_part>, [
-	[null, <immersiveengineering:material>, <embers:adhesive>],
+	[null, <immersiveengineering:material>, <ore:glue>],
 	[<immersiveengineering:material>, <betterwithmods:material:4>, <betterwithmods:material:4>],
-	[<embers:adhesive>, <betterwithmods:material:4>, <betterwithmods:material:4>]
+	[<ore:glue>, <betterwithmods:material:4>, <betterwithmods:material:4>]
 	]);
 recipes.remove(<openglider:hang_glider_part:1>);
 recipes.addShaped(<openglider:hang_glider_part:1>, [
-	[<embers:adhesive>, <immersiveengineering:material>, null],
+	[<ore:glue>, <immersiveengineering:material>, null],
 	[<betterwithmods:material:4>, <betterwithmods:material:4>, <immersiveengineering:material>],
-	[<betterwithmods:material:4>, <betterwithmods:material:4>, <embers:adhesive>]
+	[<betterwithmods:material:4>, <betterwithmods:material:4>, <ore:glue>]
 	]);
 	
 # *------- Serene Seasons -------*
@@ -161,13 +156,13 @@ recipes.addShaped(<sereneseasons:greenhouse_glass>, [
 recipes.remove(<waystones:waystone>);   
 
 # *------- WR-CBE -------*
-#REther pearl
+#REther pearl 
 recipes.remove(<wrcbe:material:2>);
 recipes.addShaped(<wrcbe:material:2>, [
 	[<ore:ingotElectrum> , <actuallyadditions:item_crystal_empowered>, <ore:ingotElectrum>],
 	[<actuallyadditions:item_crystal_empowered>, <minecraft:ender_pearl>, <actuallyadditions:item_crystal_empowered>],
 	[ <ore:ingotElectrum>, <actuallyadditions:item_crystal_empowered>, <ore:ingotElectrum>]
-	]);
+	]); 
 
 # *------- X-Net -------*
 #Controller

@@ -21,15 +21,15 @@ val dyeDictionary as IOreDictEntry[] = [
 	<ore:dyeRed>,
 	<ore:dyeBlack>
 	] as IOreDictEntry[];
-	
+
 #Beds
-val oakMould = <betterwithmods:moulding_wood>.withTag({texture: {Properties: {variant: "oak"}, Name: "minecraft:planks"}});
+val moulding = mods.betterwithmods.MiniBlocks.getMiniBlock("moulding", <ore:plankWood>);
 
 recipes.remove(<minecraft:bed:*>);
 recipes.addShaped(<minecraft:bed>, [
 	[],
 	[<betterwithmods:aesthetic:9>, <betterwithmods:aesthetic:9>, <betterwithmods:aesthetic:9>],
-	[oakMould, null, oakMould]
+	[moulding, null, moulding]
 	]);
 
 for i in 0 to 16 {
@@ -54,24 +54,31 @@ recipes.remove(<betterwithmods:hibachi>);
 recipes.addShaped(<betterwithmods:hibachi>, [
 	[<betterwithmods:material:17>, <betterwithmods:material:17>, <betterwithmods:material:17>],
 	[<ore:stone>, <betterwithmods:material:27>, <ore:stone>],
-	[<ore:stone>, <embers:superheater>, <ore:stone>]
+	[<ore:stone>, <techreborn:plates:4>, <ore:stone>]
 	]);
-	
-#Ender eye
-recipes.remove(<minecraft:ender_eye>);
-mods.betterwithmods.Cauldron.addStoked([<betterwithmods:material:23>, <minecraft:ender_pearl>], [<minecraft:ender_eye>]);
+
+#Haft
+recipes.remove(<betterwithmods:material:36>);
+recipes.addShaped(<betterwithmods:material:36>, [
+	[null, <embers:ashen_cloth>],
+	[null, <ore:glue>],
+	[null, moulding]
+	]);
+
+#Soul forged anvil
+recipes.remove(<betterwithmods:steel_anvil>);
+recipes.addShaped(<betterwithmods:steel_anvil>, [
+	[<betterwithmods:material:14>, <embers:superheater>, <betterwithmods:material:14>],
+	[null, <betterwithmods:material:14>],
+	[<betterwithmods:material:14>, <betterwithmods:material:14>, <betterwithmods:material:14>]
+	]);
 
 #Soulsteel plating
-mods.betterwithmods.Anvil.addShapeless(<betterwithmods:material:51>, [<betterwithmods:material:14>, <embers:tinker_hammer>.withTag({})]);
+mods.embers.Stamper.add(<betterwithmods:material:51>, <liquid:iron>*250, <embers:stamp_plate>, <betterwithmods:material:14>);
 
 #Soulsteel plate armour
 mods.betterwithmods.Anvil.removeShaped(<betterwithmods:material:42>);
-mods.betterwithmods.Anvil.addShaped(<betterwithmods:material:42>, [
-[<betterwithmods:material:8>, <betterwithmods:material:51>, <betterwithmods:material:41>, <betterwithmods:material:8>],
-[],
-[],
-[]
-]);
+mods.betterwithmods.Anvil.addShaped(<betterwithmods:material:42>, [[<embers:ashen_cloth>, <betterwithmods:material:51>, <betterwithmods:material:41>, <embers:ashen_cloth>]]);
 
 # *======= Removals =======*
 #Wooden gear
