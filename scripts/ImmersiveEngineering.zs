@@ -8,13 +8,13 @@ recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersive
 recipes.addShapeless(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}),
 	[<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"})]);
 	
-recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [
+recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})*8, [
 	[],
 	[<techreborn:part:32>, <techreborn:part:32>, <techreborn:part:32>],
 	[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>]
 	]);
 	
-recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [
+recipes.addShaped(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})*8, [
 	[],
 	[<ore:leather>, <ore:leather>, <ore:leather>],
 	[<ore:ingotSteel>, <minecraft:redstone>, <ore:ingotSteel>]
@@ -47,17 +47,17 @@ recipes.addShaped(<immersiveengineering:wooden_device1:1>, [
 #Blast furnace
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
-	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>],
-	[<embers:plate_caminite>, <embers:shard_ember>, <embers:plate_caminite>],
-	[<minecraft:netherbrick>, <embers:plate_caminite>, <minecraft:netherbrick>]
+	[<minecraft:netherbrick>, <contenttweaker:firebrick>, <minecraft:netherbrick>],
+	[<contenttweaker:firebrick>, <embers:shard_ember>, <embers:plate_caminite>],
+	[<minecraft:netherbrick>, <contenttweaker:firebrick>, <contenttweaker:firebrick>]
 	]);
 	
 #Coke furnace
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.addShaped(<immersiveengineering:stone_decoration>, [
-	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>],
-	[<embers:plate_caminite>, <embers:shard_ember>, <embers:plate_caminite>],
-	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>]
+	[<minecraft:brick>, <contenttweaker:firebrick>, <minecraft:brick>],
+	[<contenttweaker:firebrick>, <embers:shard_ember>, <contenttweaker:firebrick>],
+	[<minecraft:brick>, <contenttweaker:firebrick>, <minecraft:brick>]
 	]);
 
 #Alloy kiln

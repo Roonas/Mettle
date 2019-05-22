@@ -1,7 +1,7 @@
 # *======= Changes =======*
 #Fertile soil
 recipes.remove(<rustic:fertile_soil>);
-
+/*
 #Drying basin
 recipes.remove(<rustic:evaporating_basin>);
 recipes.addShaped(<rustic:evaporating_basin>, [
@@ -49,7 +49,7 @@ recipes.addShaped(<rustic:liquid_barrel>, [
 	[<gardenstuff:metal_lattice:1>, null, <gardenstuff:metal_lattice:1>],
 	[<ore:plankWood>, <ore:slabWood>, <ore:plankWood>]
 	]);
-
+*/
 #Cresote funnels 
 recipes.remove(<charcoal_pit:stone_creosote_collector>);
 recipes.addShaped(<charcoal_pit:stone_creosote_collector>, [

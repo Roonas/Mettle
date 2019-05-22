@@ -26,11 +26,15 @@ val pcPlastic = <pneumaticcraft:plastic>.definition;
 for i in 0 to 16 {
 	<ore:plastic>.add(pcPlastic.makeStack(i));
 }
+
+#Bauxite
+<ore:oreBauxite>.add(<immersiveengineering:ore:1>);
 	
 # *======= Removals =======*
 #Aluminium
 furnace.remove(<ore:ingotAluminum>);
 <ore:oreAluminum>.remove(<geolosys:cluster:6>);
+<ore:oreAluminum>.remove(<immersiveengineering:ore:1>);
 
 #Titanium
 furnace.remove(<techreborn:ingot:14>);
