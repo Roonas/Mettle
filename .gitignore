@@ -1,0 +1,16 @@
+# Client configs
+config/AppliedEnergistics2/CustomRecipes.cfg
+config/AppliedEnergistics2/VersionChecker.cfg
+config/InvTweaks.cfg
+config/jei/worldSettings.cfg
+config/jei/itemBlacklist.cfg
+config/jei/bookmarks.ini
+config/splash.properties
+
+# Instance sync
+config/AppliedEnergistics2/items.csv
+config/brandon3055/ResourceCache/
+
+# Mod folders
+mods/1.12.2
+mods/memory_repo
