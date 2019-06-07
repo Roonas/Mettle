@@ -8,13 +8,7 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:dustWheat>.add(<betterwithmods:raw_pastry:3>);
 
 #Wax
-<ore:wax>.addItems([<gardenstuff:material:7>, <betterwithmods:material:13>]);
-
-#Tallow
-<ore:tallow>.add(<gardenstuff:material:7>);
-
-#Candle
-<ore:blockCandle>.add(<gardenstuff:candelabra>);
+<ore:wax>.add(<betterwithmods:material:13>);
 
 #Glue
 <ore:glue>.add(<embers:adhesive>);

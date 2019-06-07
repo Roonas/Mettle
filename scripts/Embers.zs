@@ -41,9 +41,10 @@ recipes.removeShaped(<embers:tinker_hammer>, [
 	[<minecraft:iron_ingot>, <minecraft:stick>, <minecraft:iron_ingot>], 
 	[null, <minecraft:stick>, null]
 	]); 
+
 recipes.addShaped(<embers:tinker_hammer>.withTag({}), [
-	[<gardenstuff:material:4>, <gardenstuff:material:4>, <gardenstuff:material:4>],
-	[<gardenstuff:material:4>, <immersiveengineering:material>, <gardenstuff:material:4>],
+	[<contenttweaker:wroughtiron>, <contenttweaker:wroughtiron>, <contenttweaker:wroughtiron>],
+	[<contenttweaker:wroughtiron>, <immersiveengineering:material>, <contenttweaker:wroughtiron>],
 	[null, <immersiveengineering:material>, null]
 	]);	
 
@@ -62,6 +63,13 @@ recipes.addShaped(<embers:superheater>, [
 	[<ore:ingotCopper>, <embers:ember_cluster>, <embers:ingot_dawnstone>],
 	[<ore:ingotCopper>, <ore:ingotCopper>]
 	]);
+
+# *======= Stamper =======*
+#Redstone plate
+mods.embers.Stamper.add(<techreborn:plates:4>, <liquid:alchemical_redstone>*144, <embers:stamp_plate>); 
+
+#Soulsteel plating
+mods.embers.Stamper.add(<betterwithmods:material:51>, <liquid:soul_steel>*144, <embers:stamp_plate>);
 
 # *======= Removals =======*
 #Gears

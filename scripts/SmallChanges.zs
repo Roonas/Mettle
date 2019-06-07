@@ -2,6 +2,12 @@
 import mods.charcoalpit;
 import mods.integrateddynamics.DryingBasin;
 
+# *------- Aroma-------*
+recipes.remove(<aroma1997sdimension:miningmultitool>);
+mods.botania.ElvenTrade.addRecipe([<aroma1997sdimension:miningmultitool>], [<contenttweaker:taintshard>]);
+<aroma1997sdimension:miningmultitool>.addTooltip(format.red("It emits an unsettling aura.."));
+<aroma1997sdimension:miningmultitool>.displayName = "Soul Catalyst Exciter";
+
 # *------- AE2-------*
 #Ae2Stuff tech
 recipes.remove(<ae2stuff:inscriber>);
@@ -73,26 +79,6 @@ mods.jei.JEI.removeAndHide(<flintmod:hoe_flint>);
 #Sharpened flint
 recipes.remove(<flintmod:tool_part_flint>);
 recipes.addShapeless(<flintmod:tool_part_flint>, [<minecraft:flint>.giveBack(), <minecraft:flint>]);
-	
-# *------- Garden Stuff -------*
-#Candle
-recipes.remove(<gardenstuff:candelabra>);
-recipes.addShaped(<gardenstuff:candelabra>, [
-	[null, <hooked:microcrafting>],
-	[null, <ore:tallow>],
-	[null, <ore:tallow>]
-	]);
-
-#Candle swapping 
-recipes.addShapeless(<gardenstuff:candelabra>, [<ore:blockCandle>]);
-
-#Bloomery
-recipes.remove(<gardenstuff:bloomery_furnace>);
-recipes.addShaped(<gardenstuff:bloomery_furnace>, [
-	[<charcoal_pit:bronze_reinforced_brick>, null, <charcoal_pit:bronze_reinforced_brick>],
-	[<immersiveengineering:stone_decoration:10>, <minecraft:furnace>, <immersiveengineering:stone_decoration:10>],
-	[<charcoal_pit:bronze_reinforced_brick>, <immersiveengineering:stone_decoration:10>, <charcoal_pit:bronze_reinforced_brick>]
-	]);
 	
 # *------- Integrated Dynamics -------*
 #Squeezer

@@ -3,7 +3,7 @@
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
 	[<ore:cobblestone>, <embers:brick_caminite>, <ore:cobblestone>],
-	[<embers:brick_caminite>, <ore:cobblestone>, <embers:brick_caminite>],
+	[<embers:brick_caminite>, null, <embers:brick_caminite>],
 	[<ore:cobblestone>, <embers:brick_caminite>, <ore:cobblestone>]
 	]);
 
@@ -27,6 +27,8 @@ recipes.addShapeless(<minecraft:mossy_cobblestone>, [<ore:cobblestone>, <roots:t
 #Ender eye
 recipes.remove(<minecraft:ender_eye>);
 mods.betterwithmods.Cauldron.addStoked([<betterwithmods:material:23>, <minecraft:ender_pearl>], [<minecraft:ender_eye>]);
+
+#Boats
 	
 # *======= Removals =======*
 #Bonemeal
@@ -34,17 +36,6 @@ recipes.remove(<minecraft:dye:15>);
 
 #Gunpowder
 recipes.remove(<minecraft:gunpowder>);
-
-#Boat
-val oakSiding = <betterwithmods:siding_wood>.withTag({texture: {Properties: {variant: "oak"}, Name: "minecraft:planks"}});
-recipes.remove(<minecraft:boat>);
-recipes.addShaped(<minecraft:boat>, [
-	[],
-	[oakSiding, <minecraft:wooden_shovel>, oakSiding],
-	[oakSiding, oakSiding, oakSiding]
-	]);
-
-
 
 #Tools
 mods.jei.JEI.removeAndHide(<minecraft:wooden_sword>);
@@ -63,6 +54,3 @@ mods.jei.JEI.removeAndHide(<minecraft:golden_helmet>);
 mods.jei.JEI.removeAndHide(<minecraft:golden_chestplate>);
 mods.jei.JEI.removeAndHide(<minecraft:golden_leggings>);
 mods.jei.JEI.removeAndHide(<minecraft:golden_boots>);
-
-
-

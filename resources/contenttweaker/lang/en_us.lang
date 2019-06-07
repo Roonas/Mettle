@@ -1,2 +1,6 @@
 item.contenttweaker.fireClay.name=Fire Clay
 item.contenttweaker.fireBrick.name=Fire Brick
+item.contenttweaker.taintShard.name=Soul Infused Catalyst
+item.contenttweaker.wroughtIron.name=Wrought Iron Ingot
+item.contenttweaker.rodStamp.name=Rod Stamp
+tile.contenttweaker.rawFireBrick.name=Unfired Fire Brick

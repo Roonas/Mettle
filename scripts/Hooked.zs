@@ -1,13 +1,15 @@
 # *======= Changes =======*
+recipes.remove(<hooked:hook>);
+recipes.addShaped(<hooked:hook>, [
+	[<immersiveengineering:material>, <immersiveengineering:material>, <minecraft:iron_pickaxe>],
+	[null, <betterwithmods:rope>, <immersiveengineering:material>],
+	[<betterwithmods:rope>, null, <immersiveengineering:material>]
+	]);
+	
+# *======= Removals =======*
 #Plant fiber
-val sharpFlint = <flintmod:tool_part_flint>;
-recipes.remove(<hooked:microcrafting>);
-recipes.addShapeless(<hooked:microcrafting>, [sharpFlint.reuse(), <charcoal_pit:straw>]);
+mods.jei.JEI.removeAndHide(<hooked:microcrafting>);
 
 #Rope
-recipes.remove(<hooked:microcrafting:1>);
-recipes.addShaped(<hooked:microcrafting:1>, [
-	[null, null, <betterwithmods:material:3>],
-	[null, <hooked:microcrafting>, null],
-	[<betterwithmods:material:3>, null, null]
-	]);
+mods.jei.JEI.removeAndHide(<hooked:microcrafting:1>);
+

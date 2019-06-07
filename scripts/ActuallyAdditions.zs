@@ -16,7 +16,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empo
 	<actuallyadditions:block_crystal:2>, <astralsorcery:itemcraftingcomponent>, <roots:moonglow_leaf>, <appliedenergistics2:material:1>, <pneumaticcraft:plastic:12>, 
 	80000, 500, [1, 0.05, 0.05]);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:3>, 
-	<actuallyadditions:block_crystal:3>, <quark:biotite>, <roots:pereskia_bulb>, <actuallyadditions:item_misc:5>, <pneumaticcraft:plastic:0>, 
+	<actuallyadditions:block_crystal:3>, <quark:biotite>, <roots:spirit_herb_item>, <actuallyadditions:item_misc:5>, <pneumaticcraft:plastic:0>, 
 	80000, 500, [1, 0.05, 0.05]);
 mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:4>, 
 	<actuallyadditions:block_crystal:4>, <techreborn:gem:2>, <roots:terra_moss_ball>, <botania:quartz:5>, <pneumaticcraft:plastic:10>, 
@@ -49,18 +49,34 @@ mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empow
 <actuallyadditions:block_misc:9>.displayName = "Machined Casing";
 recipes.remove(<actuallyadditions:block_misc:9>);
 recipes.addShaped(<actuallyadditions:block_misc:9>, [
-	[<ore:ingotAluminum>, <techreborn:plates:34>, <ore:ingotAluminum>], 
+	[<ore:plastic>, <techreborn:plates:34>, <ore:plastic>], 
 	[<techreborn:plates:34>, <techreborn:part:29>, <techreborn:plates:34>], 
-	[<ore:ingotAluminum>, <techreborn:plates:34>, <ore:ingotAluminum>]
+	[<ore:plastic>, <techreborn:plates:34>, <ore:plastic>]
 	]);
 
+#Knife blade
+recipes.remove(<actuallyadditions:item_misc:2>);
+recipes.addShaped(<actuallyadditions:item_misc:2>, [
+	[null, <thermalfoundation:material:160>],
+	[null, <thermalfoundation:material:160>],
+	[null, <minecraft:flint>]
+	]);
+	
+#Knife handle
+recipes.remove(<actuallyadditions:item_misc:3>);
+recipes.addShaped(<actuallyadditions:item_misc:3>, [
+	[],
+	[null, <betterwithmods:material:8>],
+	[null, <immersiveengineering:material>]
+	]);
+	
 #Dough
 val waterBottle = <minecraft:potion>.withTag({Potion: "minecraft:water"});
 recipes.remove(<actuallyadditions:item_misc:9>);
-recipes.addShapeless(<actuallyadditions:item_misc:9>*2, [<actuallyadditions:item_food:16>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
+recipes.addShapeless(<actuallyadditions:item_misc:9>*3, [<actuallyadditions:item_food:16>, <extratrees:misc:4>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
 
 recipes.remove(<actuallyadditions:item_misc:4>);
-recipes.addShapeless(<actuallyadditions:item_misc:4>*2, [<ore:dustWheat>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
+recipes.addShapeless(<actuallyadditions:item_misc:4>*3, [<ore:dustWheat>, <extratrees:misc:4>, <ore:dustSalt>, waterBottle.transformReplace(<minecraft:glass_bottle>)]);
 
 # *======= Removals =======*
 #Empowered blocks/items
@@ -74,5 +90,3 @@ mods.actuallyadditions.Crusher.removeRecipe(<techreborn:dust:55>);
 
 #Tiny torches
 mods.jei.JEI.removeAndHide(<actuallyadditions:block_tiny_torch>);
-
-

@@ -32,5 +32,5 @@ mods.jei.JEI.removeAndHide(<roots:gold_knife>);
 
 #Hammers
 mods.jei.JEI.removeAndHide(<roots:wood_hammer>);
-mods.jei.JEI.removeAndHide(<roots:stone_hammer>);
+#mods.jei.JEI.removeAndHide(<roots:stone_hammer>);
 mods.jei.JEI.removeAndHide(<roots:gold_hammer>);

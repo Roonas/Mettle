@@ -48,15 +48,15 @@ recipes.addShaped(<immersiveengineering:wooden_device1:1>, [
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.addShaped(<immersiveengineering:stone_decoration:1>, [
 	[<minecraft:netherbrick>, <contenttweaker:firebrick>, <minecraft:netherbrick>],
-	[<contenttweaker:firebrick>, <embers:shard_ember>, <embers:plate_caminite>],
-	[<minecraft:netherbrick>, <contenttweaker:firebrick>, <contenttweaker:firebrick>]
+	[<contenttweaker:firebrick>, <betterwithmods:material:16>, <contenttweaker:firebrick>],
+	[<minecraft:netherbrick>, <contenttweaker:firebrick>, <minecraft:netherbrick>]
 	]);
 	
 #Coke furnace
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.addShaped(<immersiveengineering:stone_decoration>, [
 	[<minecraft:brick>, <contenttweaker:firebrick>, <minecraft:brick>],
-	[<contenttweaker:firebrick>, <embers:shard_ember>, <contenttweaker:firebrick>],
+	[<contenttweaker:firebrick>, <betterwithmods:material:16>, <contenttweaker:firebrick>],
 	[<minecraft:brick>, <contenttweaker:firebrick>, <minecraft:brick>]
 	]);
 
@@ -67,29 +67,83 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10>, [
 	[<embers:plate_caminite>, <minecraft:hardened_clay>, <embers:plate_caminite>],
 	[<minecraft:brick>, <embers:plate_caminite>, <minecraft:brick>]
 	]);
-	
+
 #Treated hammer
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped(<immersiveengineering:tool>, [
-	[null, <gardenstuff:material:4>, <betterwithmods:material:3>],
-	[null, <immersiveengineering:material>, <gardenstuff:material:4>],
+	[null, <contenttweaker:wroughtiron>, <betterwithmods:material:3>],
+	[null, <immersiveengineering:material>, <contenttweaker:wroughtiron>],
 	[<immersiveengineering:material>]
 	]);
 	
 #Wire cutters
 recipes.remove(<immersiveengineering:tool:1>);
 recipes.addShaped(<immersiveengineering:tool:1>, [
-	[<immersiveengineering:material>, <gardenstuff:material:4>],
+	[<immersiveengineering:material>, <contenttweaker:wroughtiron>],
 	[null, <immersiveengineering:material>],
 	[]
 	]);
+	
+# *======= Blueprints =======*
+#Nixie tube
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:26>);	
+mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineering:material:26>, 
+	[<ore:blockGlass>, <thermalfoundation:material:197>, <immersiveengineering:material:20>, <minecraft:redstone>]);
+#Circuit board
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:27>);	
+mods.immersiveengineering.Blueprint.addRecipe("components", <immersiveengineering:material:27>, 
+	[<immersiveengineering:stone_decoration:8>, <thermalfoundation:material:128>, <immersiveengineering:material:26>, <immersiveengineering:material:26>]);
 
-#BlastFurnace - fuel addition
+#Components blueprint
+recipes.remove(<immersiveengineering:blueprint>.withTag({blueprint: "components"}));
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "components"}), [
+	[<ore:ingotCopper>, <ore:ingotLead>, <ore:ingotIron>],
+	[<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
+	[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
+	]);
+	
+# *======= Alloy Smelter =======*
+#Wrought iron
+mods.immersiveengineering.AlloySmelter.addRecipe(<contenttweaker:wroughtiron>, <ore:sand>, <minecraft:iron_ingot>, 600);
+
+# *======= Blast Furnace =======*
+#Must remove IE metal
+
+#fuel addition
 mods.immersiveengineering.BlastFurnace.addFuel(<geolosys:coal:3>, 1200);
 
-#BlastFurnace - steel
-mods.immersiveengineering.BlastFurnace.removeRecipe(<thermalfoundation:material:160>);
+#fuel removal
+mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:coal:1>);
+mods.immersiveengineering.BlastFurnace.removeFuel(<thermalfoundation:storage_resource>);
+
+#Steel
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:material:160>, <mekanism:enrichediron>, 1200, <immersiveengineering:material:7>);
+
+# *======= Plate press =======*
+#Steel plates
+mods.embers.Stamper.add(<thermalfoundation:material:352>, <liquid:steel>*144, <embers:stamp_plate>);
+
+#Iridium plate removal
+mods.immersiveengineering.MetalPress.removeRecipe(<techreborn:plates:37>);
+
+# *======= Arc Furnace =======* 
+#Must remove IE metal
+
+#Aluminium
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:1>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132>, <immersiveengineering:ore:1>, <techreborn:nuggets:14>, 2000, 2048);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132>, <geolosys:cluster:6>, <techreborn:nuggets:14>, 2000, 2048);
+
+#Luminum
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166>, <thermalfoundation:material:130>, null, 2000, 2048, [<thermalfoundation:material:129>*3, <minecraft:glowstone>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166>, <thermalfoundation:material:66>, null, 2000, 2048, [<thermalfoundation:material:65>*3, <minecraft:glowstone_dust>*4], "Alloying");
+
+#TR ingots removal
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:3>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:14>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:15>);
 
 # *======= Removals =======*
 #Hammer - plates
@@ -103,12 +157,6 @@ recipes.remove(<immersiveengineering:material:1>);
 recipes.remove(<immersiveengineering:material:2>);
 recipes.remove(<immersiveengineering:material:3>);
 
-#Tools
-mods.jei.JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
-mods.jei.JEI.removeAndHide(<immersiveengineering:axe_steel>);
-mods.jei.JEI.removeAndHide(<immersiveengineering:sword_steel>);
-mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
-
 #Hemp cloth 
 mods.jei.JEI.removeAndHide(<immersiveengineering:material:5>);
 
@@ -116,17 +164,5 @@ mods.jei.JEI.removeAndHide(<immersiveengineering:material:5>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:material:4>);
 <immersiveengineering:seed>.addTooltip(format.red("Immersive Engineering hemp is disabled in favour of Better With Mods', please use theirs instead!"));
 
-#BlastFurnace - coal fuels
-mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:coal:1>);
-mods.immersiveengineering.BlastFurnace.removeFuel(<thermalfoundation:storage_resource>);
-
 #Crusher - tungsten ore
 mods.immersiveengineering.Crusher.removeRecipesForInput(<techreborn:ore:8>);
-
-#ArcFurnace - TR ingots
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:3>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:14>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<techreborn:ingot:15>);
-
-#MetalPress - TR plates
-mods.immersiveengineering.MetalPress.removeRecipe(<techreborn:plates:37>);
