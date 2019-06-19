@@ -5,11 +5,13 @@ recipes.addShaped(<pneumaticcraft:pressure_chamber_wall>*4, [
 	[<pneumaticcraft:ingot_iron_compressed>, <thermalfoundation:material:352>, <pneumaticcraft:ingot_iron_compressed>],
 	[<thermalfoundation:material:352>, null, <thermalfoundation:material:352>],
 	[<pneumaticcraft:ingot_iron_compressed>, <thermalfoundation:material:352>, <pneumaticcraft:ingot_iron_compressed>]
-	]);
+]);
 	
-#TR circuit
+#TR circuits
 recipes.remove(<techreborn:part:29>);
 mods.pneumaticcraft.assembly.addDrillLaserRecipe(<pneumaticcraft:printed_circuit_board>, <techreborn:part:29>);
+recipes.remove(<techreborn:part:30>);
+mods.pneumaticcraft.assembly.addDrillLaserRecipe(<pneumaticcraft:advanced_pcb>, <techreborn:part:30>);
 
 #AE circuits
 mods.pneumaticcraft.assembly.addDrillLaserRecipe(<appliedenergistics2:material:5>, <appliedenergistics2:material:20>);

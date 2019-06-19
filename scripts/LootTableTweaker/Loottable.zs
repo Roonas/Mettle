@@ -8,3 +8,4 @@ mods.ltt.LootTable.removeGlobalItem("minecraft:wooden_sword");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wooden_axe");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wooden_shovel");
 mods.ltt.LootTable.removeGlobalItem("minecraft:wooden_hoe");
+mods.ltt.LootTable.removeGlobalItem("immersiveengineering:metal:1");

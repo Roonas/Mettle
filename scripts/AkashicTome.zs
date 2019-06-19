@@ -14,14 +14,6 @@ print(" ==================================================== ");
 	{
 		"akashictome:is_morphing": 1 as byte,
 		"akashictome:data": {
-			actuallyadditions: {
-				id: "actuallyadditions:item_booklet",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:definedMod": "actuallyadditions"
-				},
-				Damage: 0 as short
-			},
 			astralsorcery: {
 				id: "astralsorcery:itemjournal",
 				Count: 1 as byte,
@@ -62,6 +54,14 @@ print(" ==================================================== ");
 				},
 				Damage: 1 as short
 			},
+			deepresonance: {
+				id: "deepresonance:dr_manual",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:definedMod": "deepresonance"
+				},
+				Damage: 0 as short
+			},
 			embers: {
 				id: "embers:codex",
 				Count: 1 as byte,
@@ -70,11 +70,11 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
-			geolosys: {
-				id: "geolosys:field_manual",
+			forestry: {
+				id: "forestry:book_forester",
 				Count: 1 as byte,
 				tag: {
-					"akashictome:definedMod": "geolosys"
+					"akashictome:definedMod": "forestry"
 				},
 				Damage: 0 as short
 			},
@@ -94,30 +94,24 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
-			roots: {
-				id: "roots:herblore_book",
+			rftools: {
+				id: "rftools:rftools_manual",
 				Count: 1 as byte,
 				tag: {
-					"akashictome:definedMod": "roots"
+					"akashictome:definedMod": "rftools"
 				},
 				Damage: 0 as short
 			},
-			roots1: {
-				id: "roots:spellcraft_book",
+			/*
+			rftools: {
+				id: "rftools:rftools_shape_manual",
 				Count: 1 as byte,
 				tag: {
-					"akashictome:definedMod": "roots1"
+					"akashictome:definedMod": "rftools"
 				},
 				Damage: 0 as short
 			},
-			roots2: {
-				id: "roots:ritual_book",
-				Count: 1 as byte,
-				tag: {
-					"akashictome:definedMod": "roots2"
-				},
-				Damage: 0 as short
-			},
+			*/
 			rustic: {
 				id: "rustic:book",
 				Count: 1 as byte,
@@ -131,6 +125,14 @@ print(" ==================================================== ");
 				Count: 1 as byte,
 				tag: {
 					"akashictome:definedMod": "techreborn"
+				},
+				Damage: 0 as short
+			},
+			thaumcraft: {
+				id: "thaumcraft:thaumonomicon",
+				Count: 1 as byte,
+				tag: {
+					"akashictome:definedMod": "thaumcraft"
 				},
 				Damage: 0 as short
 			},
